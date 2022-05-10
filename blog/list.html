@@ -20,7 +20,7 @@
         </tr>
         <tr>
             <td>Image:</td>
-            <td><input type="file" id="image" placeholder="Image"></td>
+            <td><input type="file" id="image"></td>
         </tr>
         <tr>
             <td>Category:</td>
@@ -64,6 +64,11 @@
             <input type="text" id="content1">
         </div>
         <div>
+            <label> Image</label>
+            <div id="showImg"></div>
+            <input type="file" id="image1">
+        </div>
+        <div>
             <label> Category</label>
             <select name="category1" id="category1">
             </select>
@@ -71,7 +76,7 @@
     </div>
 </form>
 <div id="action">
-    <button type="button" onclick="updateBlog(${id})">Update</button>
+
 </div>
 
 </body>
