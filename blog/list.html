@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<form >
+    <table id="addBlog">
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" id="title" placeholder="Title"></td>
+        </tr>
+        <tr>
+            <td>Content:</td>
+            <td><input type="text" id="content" placeholder="Content"></td>
+        </tr>
+        <tr>
+            <td>Image:</td>
+            <td><input type="file" id="image" placeholder="Image"></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>
+                <select id="category" name="category">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Add" onclick="addNewBlog()" ></td>
+        </tr>
+    </table>
+</form>
+
+<h1>Blog</h1>
+<table  border="1">
+    <thead>
+    <tr>
+        <th>Title </th>
+        <th>Content</th>
+        <th>Image</th>
+        <th>Category</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+        <tbody id="listBlog">
+        </tbody>
+</table>
+<div >
+    <h4 >Update Blog</h4>
+</div>
+<form>
+    <div>
+        <div>
+            <label> Title</label>
+            <input type="text" id="title1">
+        </div>
+        <div>
+            <label> Content</label>
+            <input type="text" id="content1">
+        </div>
+        <div>
+            <label> Category</label>
+            <select name="category1" id="category1">
+            </select>
+        </div>
+    </div>
+</form>
+<div id="action">
+    <button type="button" onclick="updateBlog(${id})">Update</button>
+</div>
+
+</body>
+<script src="blog.js"></script>
+</html>
